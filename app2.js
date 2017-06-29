@@ -14,9 +14,12 @@ $(document).ready(function() {
           document.getElementById("myPost").innerHTML = myJson;
                 
 
-}
+},
 
-
+error: function(response) {
+                     alert(JSON.stringify(response));
+                     $(".initial-div").show();
+                 }
 
 
             }//end argument list 
